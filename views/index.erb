@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/_styles.css">
     <style>
         body {
-            padding-top: 70px;
+            padding-top: 50px;
             padding-bottom: 20px;
         }
     </style>
@@ -49,13 +49,22 @@
       </nav>
     </header>
 
-    <div class="carousel">
-      <img src="" alt="Lifestyle Photo">
-      <img src="" alt="Mission">
-      <img src="" alt="Vaccinations">
-      <img src="" alt="Fish">
-      <img src="" alt="Exotic Animals">
-    </div>
+    <div class="carousel slide" data-ride="carousel" id="featured">
+      <div class="carousel-inner">
+        <div class="item active"><img src="img/carousel-lifestyle.jpg" alt="Lifestyle Photo"></div>
+        <div class="item"><img src="img/carousel-mission.jpg" alt="Mission"></div>
+        <div class="item"><img src="img/carousel-vaccinations.jpg" alt="Vaccinations"></div>
+        <div class="item"><img src="img/carousel-fish.jpg" alt="Fish"></div>
+        <div class="item"><img src="img/carousel-exoticanimals.jpg" alt="Exotic Animals"></div>
+      </div> <!-- carousel-inner -->
+
+      <a href="#featured" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>  
+      </a>
+      <a href="#featured" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  
+      </a>
+    </div> <!-- featured carousel -->
 
     <div class="main">
       <div class="page" id="mission">
@@ -109,7 +118,6 @@
             </article>
           </div>
         </div>
-      <h2>Services</h2>
 
       <div class="page" id="Staff">
         <div class="content container">
@@ -180,15 +188,21 @@
     </div> <!-- main -->
 
     <footer>
-      <div class="container content">
-        <div>Call us toll-free at <span class="phone">089-111-2222</span></div>
-        <nav>
-          <ul>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </nav>
-        <p>All contents &copy;2014 <a href="#">Lynda.com</a></p>
+      <div class="container-fluid content">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Call us toll-free at <span class="phone">089-111-2222</span></p>
+            <p>All contents &copy;2014 <a href="#">Lynda.com</a></p>
+          </div>
+          <div class="col-sm-6">
+            <nav class="navbar navbar-default">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div> <!-- row -->
       </div> <!-- container content -->
     </footer>
 
