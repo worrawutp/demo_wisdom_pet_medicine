@@ -6328,9 +6328,6 @@ h6 {
   font-weight: 100;
   margin: 0;
 }
-img {
-  max-width: 200px;
-}
 header .navbar {
   padding: 30px 0;
 }
@@ -6423,4 +6420,23 @@ footer .navbar-default {
   .service p {
     padding: 0 15%;
   }
+}
+#staff {
+  background-color: #14A3B7;
+  background-image: linear-gradient(to bottom, #56a233, #45ad6a);
+}
+.doctor {
+  margin: 10px 0;
+}
+.doctor h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: white;
+  padding-bottom: 5px;
+}
+.doctor p {
+  font-size: 0.8em;
+}
+.doctor img {
+  width: 100%;
 }
