@@ -90,25 +90,9 @@ and (max-width: 768px) {
 	}
 }
 
-
-.content {
-
-}
-
-.service {
-
-}
-
 .navbar {
 	border-radius: 0;
 	
-}
-
-
-
-footer .navbar-default {
-	background: transparent;
-	border: 0;
 }
 
 // *** Pages services ***
@@ -255,5 +239,42 @@ and (max-width: 768px) {
 	}
 	.quote:hover .intro:after {
 		content: '';
+	}
+}
+
+// *** Footer ***
+footer {
+	background: #586D74;
+	color: white;
+	font-size: 0.7em;
+	padding: 20px 0 40px 0;
+
+	.phone {
+		font-size: 1.4em;
+		color: #E0E6AE;
+		font-weight: 700;
+	}
+
+	a {
+		color: #E0E6AE;
+	}
+	a:hover {
+		color: #EECC56 !important;
+	}
+
+	.navbar {
+		margin-bottom: 0;
+		min-height: 0;
+	}
+	.navbar-default {
+		background-color: transparent;
+		border: none;
+		margin-right: 40px;
+	}
+	.navbar-nav>li a {
+		padding-top: 0;
+		padding-bottom: 0;
+		text-decoration: underline;
+		color: #EEC856 !important;
 	}
 }
