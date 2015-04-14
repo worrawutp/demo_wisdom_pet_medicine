@@ -178,3 +178,82 @@ and (max-width: 768px) {
 	}
 }
 
+// *** Pages Testimonials ***
+#testimonials {
+	padding: 0;
+	
+	h2 {
+		display: none;
+	}
+
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border-left: none;
+		min-height: 500px;
+		position: relative;
+
+		.quote {
+			background-color: rgba(255,255,255, 0.6);
+			padding: 20px 5%;
+			position: absolute;
+			bottom: 0;
+			width: 75%;
+			font-weight: 400;
+			border-radius: 0 50px 0 0;
+		}
+
+		.quote:hover {
+			background-color: rgba(239, 240, 196, 0.9);
+		}
+	}
+
+	#janeh {
+		background: url(/img/testimonial-janeh.jpg) no-repeat center;
+		background-size: cover;
+	}
+	#johnb {
+		background: url(/img/testimonial-johnb.jpg) no-repeat center;
+		background-size: cover;
+	}
+	#mcphersons {
+		background: url(/img/testimonial-mcphersons.jpg) no-repeat center;
+		background-size: cover;
+	}
+	#lorraines {
+		background: url(/img/testimonial-lorraines.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.quote .more, .customer {
+		opacity: 0;
+		font-size: 0;
+		line-height: 0;
+		padding-top: 10px;
+	}
+
+	.quote:hover .more{
+		opacity: 1;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 100;
+		font-size: 0.8em;
+		line-height: 120%;
+		display: block;
+	}
+
+	.quote:hover .customer {
+		opacity: 1;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 100;
+		display: block;
+		font-size: 0.7em;
+		text-align: right;
+	}
+
+	.quote .intro:after {
+		content: '...';
+	}
+	.quote:hover .intro:after {
+		content: '';
+	}
+}
